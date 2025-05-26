@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "src": "Angular/taller-frontend",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist/taller-frontend" }
+    },
+    {
+      "src": "backend/src/index.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "backend/src/index.ts" }
+  ]
+}

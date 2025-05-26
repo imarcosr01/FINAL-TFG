@@ -1,0 +1,15 @@
+# Node
+**/node_modules
+**/dist
+**/.env
+
+# Angular
+**/taller-frontend/node_modules
+**/taller-frontend/dist
+
+# Workbench/MySQL
+**/base de datos/*.sql
+
+# IDEs, SO
+.DS_Store
+*.log
